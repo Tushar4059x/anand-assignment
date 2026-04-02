@@ -25,16 +25,11 @@ export function Sidebar({ className, onClose }: SidebarProps) {
         className
       )}
     >
-      {/* Logo */}
+      {/* Header */}
       <div className="flex items-center justify-between px-5 py-5 border-b border-slate-100 dark:border-slate-700">
-        <div className="flex items-center gap-2.5">
-          <div className="w-8 h-8 rounded-xl bg-brand-500 flex items-center justify-center flex-shrink-0">
-            <TrendingUp className="w-4 h-4 text-white" />
-          </div>
-          <span className="text-base font-bold text-slate-900 dark:text-white tracking-tight">
-            FinanceIQ
-          </span>
-        </div>
+        <span className="text-base font-bold text-slate-900 dark:text-white tracking-tight">
+          FinanceIQ
+        </span>
         {onClose && (
           <button
             onClick={onClose}
